@@ -172,7 +172,7 @@ class JavascriptHelper extends AppHelper {
 		} elseif (empty($options)) {
 			$options = array();
 		}
-		$defaultOptions = array('allowCache' => true, 'safe' => true, 'inline' => true);
+		$defaultOptions = array('allowCache' => true, 'safe' => true, 'inline' => false);
 		$options = array_merge($defaultOptions, $options);
 
 		if (empty($script)) {
