@@ -492,7 +492,7 @@ class AjaxHelper extends AppHelper {
 		$script = "{$var}new Ajax.Autocompleter('{$htmlOptions['id']}', '{$divOptions['id']}', '";
 		$script .= $this->Html->url($url) . "', {$options});";
 
-		return  "{$text}\n{$div}\n🐝" . $this->Javascript->codeBlock($script);
+		return  "{$text}\n{$div}\n" . $this->Javascript->codeBlock($script);
 	}
 /**
  * Creates an Ajax-updateable DIV element
